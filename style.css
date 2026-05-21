@@ -156,13 +156,13 @@ img {
 
 /*============HEADER & NAV===============*/
 .header {
-    position: auto;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     background-color: transparent;
     z-index: auto;
-    transition: box sahdow -4rem;
+    transition: box sahdow .4s;
 }
 
 .nav {
@@ -238,7 +238,7 @@ img {
     font-size: var(--h2-font-size);
 }
 
-.nav__name::after
+.nav__name::after,
 .nav__name::before{
     content: '';
     width: 40px;
@@ -407,7 +407,7 @@ ul {
 }
 
 .home__description b{
-     background: linear-gradient(90deg
+     background: linear-gradient(90deg,
                   hsla(14, 98%, 50%, .3),
                   hsla(14, 98%, 50%, 0));
 }
@@ -468,7 +468,7 @@ ul {
     padding: 1.1rem 1.5rem;
     color: var(--white-color);
     font-weight: var(--font-medium);
-    transition: ackground-color .4s;
+    transition: background-color .4s;
 }
 
 .button i{
@@ -644,7 +644,7 @@ ul {
     }
 
     .nav__link:hover{
-        columns: var(--title-color);
+        color: var(--title-color);
     }
 
     .nav__link::after{
